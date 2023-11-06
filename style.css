@@ -1,0 +1,167 @@
+/* Global Styles */
+
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #444;
+  font-size: large;
+  padding: 50;
+  margin: 10;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #2196F3;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Untuk semua tautan di dalam elemen slide saat dihover atau difokus */
+.slide a:hover,
+.slide a:focus {
+  color: #f44336; /* Warna merah saat dihover atau difokus */
+}
+
+
+
+/* Header Styles */
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #2196F3;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f1f1f1;
+  color: #2196F3;
+  border-color: #2196F3;
+}
+
+
+/* Main Content Styles */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+section {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+img {
+  object-fit: cover;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* Footer Styles */
+
+.footer {
+  background-color: #f1f1f1;
+  color: #444;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Slideshow Styles */
+
+.container-slide {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Hide all images initially */
+.imgslide {
+  display: none;
+}
+
+/* Show the active image and add fading transition */
+img.active,
+.imgslide:hover {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+/* Navigation buttons for the slideshow */
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%); /* Center vertically */
+  width: 20px;
+  padding: 55px;
+  font-size: 80%;
+  color: #000000;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  right: -20px
+ 
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%); /* Center vertically */
+  width: 20px;
+  padding: 55px;
+  font-size: 80%;
+  color: #000000;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  left: -20; /* Tombol "next" muncul di sisi kiri */
+}
+
+
+.next:hover,
+.prev:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
